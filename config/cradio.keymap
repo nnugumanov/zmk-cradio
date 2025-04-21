@@ -89,10 +89,10 @@
 
         Num {
             bindings = <
-&none            &ruen_key LS(N5) LS(N4)     &kp SLASH        &ruen_one_key 1 LS(N8)  &kp ESCAPE             &kp LA(SPACE)          &kp LS(N9)               &kp EQUAL               &kp LS(N0)             &kp LS(MINUS)
-&ht F1 NUMBER_1  &ht F2 NUMBER_2             &ht F3 NUMBER_3  &ht F4 NUMBER_4         &ht F5 NUMBER_5        &ht F6 NUMBER_6        &ht F7 NUMBER_7          &ht F8 NUMBER_8         &ht F9 NUMBER_9        &ht F10 NUMBER_0
-&kp F11          &ruen_one_key 1 LS(N4)      &kp MINUS        &kp LS(EQUAL)           &ruen_switch 0 LG(N9)  &ruen_switch 1 LG(N8)  &ruen_key PERIOD LS(N7)  &ruen_key COMMA LS(N6)  &ruen_one_key 0 LA(H)  &kp F12
-                                                              &trans                  &kp LEFT_SHIFT         &kp SPACE              &kp BACKSPACE
+&none            &ruen_key LS(N5) LS(N4)     &kp SLASH        &ruen_one_key 1 LS(N8)  &kp ESCAPE             &kp LA(SPACE)    &kp LS(N9)               &kp EQUAL               &kp LS(N0)             &kp LS(MINUS)
+&ht F1 NUMBER_1  &ht F2 NUMBER_2             &ht F3 NUMBER_3  &ht F4 NUMBER_4         &ht F5 NUMBER_5        &ht F6 NUMBER_6  &ht F7 NUMBER_7          &ht F8 NUMBER_8         &ht F9 NUMBER_9        &ht F10 NUMBER_0
+&kp F11          &ruen_one_key 1 LS(N4)      &kp MINUS        &kp LS(EQUAL)           &ruen_switch 0 LG(N9)  &none            &ruen_key PERIOD LS(N7)  &ruen_key COMMA LS(N6)  &ruen_one_key 0 LA(H)  &kp F12
+                                                              &trans                  &kp LEFT_SHIFT         &kp SPACE        &kp BACKSPACE
             >;
         };
 
@@ -100,7 +100,7 @@
             bindings = <
 &none                   &ruen_one_key 1 LS(RIGHT_BRACKET)  &ruen_one_key 1 LS(N3)          &ruen_one_key 1 LS(LEFT_BRACKET)  &ruen_one_key 1 BACKSLASH  &ruen_one_key 1 GRAVE   &ruen_one_key 1 LS(COMMA)  &ruen_one_key 1 LS(BACKSLASH)  &ruen_one_key 1 LS(PERIOD)  &kp LS(MINUS)
 &ruen_one_key 1 LS(N7)  &kp LS(N1)                         &ruen_key LS(SEMICOLON) LS(N5)  &ruen_key LS(SQT) LS(N2)          &ruen_one_key 1 SQT        &ruen_one_key 1 LS(N2)  &sm LEFT_GUI               &sm LEFT_ALT                   &sm LEFT_SHIFT              &sm LCTRL
-&none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &none                      &kp LS(NUMBER_6)        &ruen_key PERIOD LS(N7)    &ruen_key COMMA LS(N6)         &none                       &kp LS(SLASH)
+&none                   &ruen_key RIGHT_BRACKET GRAVE      &ruen_key SEMICOLON LS(N8)      &ruen_key LEFT_BRACKET LS(GRAVE)  &none                      &ruen_switch 1 LG(N8)   &ruen_key PERIOD LS(N7)    &ruen_key COMMA LS(N6)         &ruen_one_key 1 LS(N6)      &kp LS(SLASH)
                                                                                            &kp DEL                           &kp LEFT_SHIFT             &kp SPACE               &trans
             >;
         };
