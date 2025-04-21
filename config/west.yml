@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/nxtkb
     # - name: jewtvet
     #   url-base: https://github.com/jewtvet
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -20,5 +22,8 @@ manifest:
     # - name: zmk-ruen
     #   remote: jewtvet
     #   revision: main
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
   self:
     path: config

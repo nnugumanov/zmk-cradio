@@ -72,16 +72,10 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mmv {
-            acceleration-exponent = <1>;      // 1
-            time-to-max-speed-ms = <300>;    // 40
-            delay-ms = <0>;                   // 0
-        };
-
-        msc {
-            acceleration-exponent = <0>;      // 0
-            time-to-max-speed-ms = <40>;      // 500
-            delay-ms = <0>;                   // 10
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp B>, <&kt C>;
         };
     };
 
@@ -139,7 +133,7 @@
         Eng {
             bindings = <
 &kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U             &kp I      &kp O  &td11 0 LS(MINUS)
-&kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J             &kp K      &kp L  &kp P
+&kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J             &kp K      &kp L  &swapper
 &kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &kp PERIOD        &kp COMMA  &kp M  &kp LS(SLASH)
                      &lt 2 DELETE  &kp LSHIFT    &kp SPACE  &backspace_morph
             >;
