@@ -6,8 +6,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: zmk
       url-base: https://github.com/nxtkb
-    - name: jewtvet
-      url-base: https://github.com/jewtvet
+    # - name: jewtvet
+    #   url-base: https://github.com/jewtvet
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -17,8 +17,8 @@ manifest:
       remote: zmk
       revision: main
       import: app/west.yml
-    - name: zmk-ruen
-      remote: jewtvet
-      revision: main
+    # - name: zmk-ruen
+    #   remote: jewtvet
+    #   revision: main
   self:
     path: config
