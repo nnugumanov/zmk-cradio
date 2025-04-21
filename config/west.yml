@@ -1,15 +1,15 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    # - name: zmkfirmware
+    #   url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: zmk
       url-base: https://github.com/nxtkb
     # - name: jewtvet
     #   url-base: https://github.com/jewtvet
-    - name: dhruvinsh
-      url-base: https://github.com/dhruvinsh
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -22,8 +22,8 @@ manifest:
     # - name: zmk-ruen
     #   remote: jewtvet
     #   revision: main
-    - name: zmk-tri-state
-      remote: dhruvinsh
+    - name: zmk-auto-layer
+      remote: urob
       revision: main
   self:
     path: config
