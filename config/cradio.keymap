@@ -133,9 +133,9 @@
 
         Eng {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U             &kp I      &ruen_key O A   &td11 0 LS(MINUS)
+&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U             &kp I      &ruen_key O B   &td11 0 LS(MINUS)
 &kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J             &kp K      &ruen_switch 0  &ruen_switch 1
-&kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &kp PERIOD        &kp COMMA  &ruen_key M A   &kp LS(SLASH)
+&kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &kp PERIOD        &kp COMMA  &ruen_key M B   &kp LS(SLASH)
                      &lt 2 DELETE  &kp LSHIFT    &kp SPACE  &backspace_morph
             >;
         };
