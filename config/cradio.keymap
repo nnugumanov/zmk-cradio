@@ -126,6 +126,13 @@
 
             label = "TG0_EN_26";
         };
+
+        ruen_one_key: ruen_one_key {
+            compatible = "zmk,behavior-ruen-one-key";
+            #binding-cells = <2>;
+            to_en = <&kp LG(N8)>;
+            to_ru = <&kp LG(N9)>;
+        };
     };
 
     keymap {
@@ -133,9 +140,9 @@
 
         Eng {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U             &kp I      &ruen_key O A          &td11 0 LS(MINUS)
-&kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J             &kp K      &ruen_switch 0 LG(N9)  &ruen_switch 1 LG(N8)
-&kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &kp PERIOD        &kp COMMA  &ruen_key M A          &kp LS(SLASH)
+&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U             &kp I      &ruen_one_key 1 LS(N5)  &td11 0 LS(MINUS)
+&kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J             &kp K      &ruen_switch 0 LG(N9)   &ruen_switch 1 LG(N8)
+&kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &kp PERIOD        &kp COMMA  &ruen_key M Z           &kp LS(SLASH)
                      &lt 2 DELETE  &kp LSHIFT    &kp SPACE  &backspace_morph
             >;
         };
