@@ -130,8 +130,8 @@
         ruen_one_key: ruen_one_key {
             compatible = "zmk,behavior-ruen-one-key";
             #binding-cells = <2>;
-            to_ens = <&kp LG(N8)>;
-            to_rus = <&kp LG(N9)>;
+            to_en = <&kp LG(N8)>;
+            to_ru = <&kp LG(N9)>;
         };
     };
 
