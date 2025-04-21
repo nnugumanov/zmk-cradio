@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/nxtkb
     - name: jewtvet
       url-base: https://github.com/jewtvet
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -21,9 +19,6 @@ manifest:
       import: app/west.yml
     - name: zmk-ruen
       remote: jewtvet
-      revision: main
-    - name: zmk-auto-layer
-      remote: urob
       revision: main
   self:
     path: config
