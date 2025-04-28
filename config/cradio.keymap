@@ -92,7 +92,7 @@
 
         Let {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U               &kp I      &ruen_test Q W      &ruen_key LS(MINUS) SEMICOLON
+&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U               &kp I      &ruen_test N1 N0    &ruen_key LS(MINUS) SEMICOLON
 &kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J               &kp K      &ruen_macos 0       &ruen_macos 1
 &kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &ruen_key PERIOD M  &kp COMMA  &ruen_key M PERIOD  &ruen_key LS(SLASH) SQT
                      &lt 1 DELETE  &kp LSHIFT    &kp SPACE  &backspace_morph
