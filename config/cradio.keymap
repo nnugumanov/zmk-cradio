@@ -119,19 +119,19 @@
 
         Nav {
             bindings = <
-&bootloader    &bt BT_CLR         &kp LG(GRAVE)                   &kp LG(TAB)              &kp PAGE_UP                &ht LG(RIGHT_BRACKET) LG(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &kp UP         &bt BT_SEL 0                               &bootloader
-&kp LG(Z)      &kp LG(X)          &kp LG(C)                       &kp LG(V)                &kp PAGE_DOWN              &kp LC(TAB)                             &kp LEFT               &kp DOWN       &kp RIGHT                                  &bt BT_SEL 1
-&kp LC(LG(F))  &kp LC(LA(ENTER))  &ht LA(LC(RIGHT)) LC(LA(LEFT))  &ht LC(LA(J)) LC(LA(U))  &ht LC(LA(K)) LC(LA(I))    &tog 4                                  &kp LC(LEFT)           &kp LC(RIGHT)  &ht LG(LA(NUMBER_3)) LG(LA(LC(NUMBER_3)))  &ht LG(LA(NUMBER_4)) LG(LA(LC(NUMBER_4)))
+&tog 4         &none              &kp LG(GRAVE)                   &kp LG(TAB)              &kp PAGE_UP                &ht LG(RIGHT_BRACKET) LG(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &kp UP         &none                                      &tog 4
+&kp LG(Z)      &kp LG(X)          &kp LG(C)                       &kp LG(V)                &kp PAGE_DOWN              &kp LC(TAB)                             &kp LEFT               &kp DOWN       &kp RIGHT                                  &none
+&kp LC(LG(F))  &kp LC(LA(ENTER))  &ht LA(LC(RIGHT)) LC(LA(LEFT))  &ht LC(LA(J)) LC(LA(U))  &ht LC(LA(K)) LC(LA(I))    &none                                   &kp LC(LEFT)           &kp LC(RIGHT)  &ht LG(LA(NUMBER_3)) LG(LA(LC(NUMBER_3)))  &ht LG(LA(NUMBER_4)) LG(LA(LC(NUMBER_4)))
                                                                   &tog 3                   &kp LEFT_SHIFT             &kp LEFT_GUI                            &kp LEFT_ALT
             >;
         };
 
-        Gam {
+        Sys {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R        &kp T  &kp Y   &kp U  &kp I  &kp O
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F        &kp G  &kp H   &kp J  &kp K  &kp L
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V        &kp B  &kp N   &kp H  &kp M  &kp P
-                              &lt 1 ESCAPE  &kp SPACE    &none  &tog 4
+&bootloader    &bt BT_CLR  &none  &none   &none   &none  &none  &none  &bt BT_CLR  &bootloader
+&bt BT_SEL 1   &none       &none  &none   &none   &none  &none  &none  &none       &bt BT_SEL 0
+&ruen_macos 1  &none       &none  &none   &none   &none  &none  &none  &none       &ruen_macos 0
+                                  &tog 4  &kp N4  &none  &none
             >;
         };
     };
