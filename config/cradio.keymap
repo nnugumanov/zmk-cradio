@@ -40,7 +40,7 @@
         z_morph: z_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "Z_MORPH";
-            bindings = <&ruen_key Z W>, <&kp 2 LG(Z)>;
+            bindings = <&ruen_key Z W>, <&kp LG(Z)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
@@ -83,15 +83,15 @@
             layers = <0 1>;
         };
 
-        DPtoSHCH {
+        DPtoIE {
             bindings = <&ruen_key F24 O>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             layers = <0>;
         };
 
-        OAtoIE {
+        OAtoSHCH {
             bindings = <&ruen_key F24 RBKT>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
             layers = <0>;
         };
     };
