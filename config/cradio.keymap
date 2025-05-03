@@ -28,13 +28,22 @@
             ignore-modifiers;
         };
 
-        backspace_morph: backspace_morph {
+        bspc_morph: bspc_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_MORPH";
             bindings = <&lt 2 BACKSPACE>, <&lt 2 LA(BACKSPACE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        z_morph: z_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Z_MORPH";
+            bindings = <&ruen_key Z W>, <&kp 2 LG(Z)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
         };
 
         ruen_one_key: ruen_one_key {
@@ -74,15 +83,15 @@
             layers = <0 1>;
         };
 
-        h {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <10 11>;
+        DPtoSHCH {
+            bindings = <&ruen_key F24 O>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
-        j {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <19 18>;
+        OAtoIE {
+            bindings = <&ruen_key F24 RBKT>;
+            key-positions = <12 13>;
             layers = <0>;
         };
     };
@@ -92,10 +101,10 @@
 
         Let {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R         &kp T         &kp Y      &kp U               &kp I      &kp O               &ruen_key LS(MINUS) SEMICOLON
-&kp A  &kp S  &kp D  &kp F         &kp G         &kp H      &kp J               &kp K      &kp L               &kp P
-&kp Z  &kp X  &kp C  &kp V         &kp B         &kp N      &ruen_key PERIOD M  &kp COMMA  &ruen_key M PERIOD  &ruen_key LS(SLASH) SQT
-                     &lt 1 DELETE  &kp LSHIFT    &kp SPACE  &backspace_morph
+&ruen_key Q A  &ruen_key W V     &ruen_key E L  &ruen_key R G  &ruen_key T SEMI  &ruen_key Y S      &ruen_key U D       &ruen_key I E      &ruen_key O M  &ruen_key LS(MINUS) DOT
+&ruen_key A Z  &ruen_key S H     &ruen_key D J  &ruen_key F F  &ruen_key G X     &ruen_key H COMMA  &ruen_key J T       &ruen_key K N      &ruen_key L B  &ruen_key P P
+&z_morph       &ruen_key X LBKT  &ruen_key C C  &ruen_key V R  &ruen_key B U     &ruen_key N Q      &ruen_key PERIOD Y  &ruen_key COMMA K  &ruen_key M I  &ruen_key LS(SLASH) SQT
+                                                &lt 1 DELETE   &kp LSHIFT        &kp SPACE          &bspc_morph
             >;
         };
 
