@@ -37,6 +37,24 @@
             mods = <(MOD_LSFT)>;
         };
 
+        q_morph: q_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_MORPH";
+            bindings = <&ruen_key Q A>, <&kp LG(Q)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        a_morph: a_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_MORPH";
+            bindings = <&ruen_key A Z>, <&kp LG(A)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
         z_morph: z_morph {
             compatible = "zmk,behavior-mod-morph";
             label = "Z_MORPH";
@@ -45,6 +63,98 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
+
+        w_morph: w_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_MORPH";
+            bindings = <&ruen_key W V>, <&kp LG(W)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        s_morph: s_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_MORPH";
+            bindings = <&ruen_key S H>, <&kp LG(S)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        x_morph: x_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "X_MORPH";
+            bindings = <&ruen_key X LBKT>, <&kp LG(X)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        c_morph: c_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_MORPH";
+            bindings = <&ruen_key C C>, <&kp LG(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        r_morph: r_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_MORPH";
+            bindings = <&ruen_key R G>, <&kp LG(R)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        f_morph: f_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_MORPH";
+            bindings = <&ruen_key F F>, <&kp LG(F)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        v_morph: v_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "V_MORPH";
+            bindings = <&ruen_key V R>, <&kp LG(V)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        b_morph: b_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_MORPH";
+            bindings = <&ruen_key B U>, <&kp LG(B)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        y_morph: y_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Y_MORPH";
+            bindings = <&ruen_key Y S>, <&kp LG(Y)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        l_morph: l_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "L_MORPH";
+            bindings = <&ruen_key L B>, <&kp LG(L)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        // Add: N O T Move: L
 
         ruen_one_key: ruen_one_key {
             compatible = "zmk,behavior-ruen-one-key";
@@ -101,10 +211,10 @@
 
         Let {
             bindings = <
-&ruen_key Q A  &ruen_key W V     &ruen_key E L  &ruen_key R G  &ruen_key T SEMI  &ruen_key Y S      &ruen_key U D       &ruen_key I E      &ruen_key O M  &ruen_key LS(MINUS) DOT
-&ruen_key A Z  &ruen_key S H     &ruen_key D J  &ruen_key F F  &ruen_key G X     &ruen_key H COMMA  &ruen_key J T       &ruen_key K N      &ruen_key L B  &ruen_key P P
-&z_morph       &ruen_key X LBKT  &ruen_key C C  &ruen_key V R  &ruen_key B U     &ruen_key N Q      &ruen_key PERIOD Y  &ruen_key COMMA K  &ruen_key M I  &ruen_key LS(SLASH) SQT
-                                                &lt 1 DELETE   &kp LSHIFT        &kp SPACE          &bspc_morph
+&q_morph  &w_morph  &ruen_key E L  &r_morph      &ruen_key T SEMI  &y_morph           &ruen_key U D       &ruen_key I E      &ruen_key O M  &ruen_key LS(MINUS) DOT
+&a_morph  &s_morph  &ruen_key D J  &f_morph      &ruen_key G X     &ruen_key H COMMA  &ruen_key J T       &ruen_key K N      &l_morph       &ruen_key P P
+&z_morph  &x_morph  &c_morph       &v_morph      &b_morph          &ruen_key N Q      &ruen_key PERIOD Y  &ruen_key COMMA K  &ruen_key M I  &ruen_key LS(SLASH) SQT
+                                   &lt 1 DELETE  &kp LSHIFT        &kp SPACE          &bspc_morph
             >;
         };
 
